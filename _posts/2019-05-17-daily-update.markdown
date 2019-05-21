@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Daily Update"
+title:  "Daily Update 5/17/19"
 date:   2019-05-17 09:15:00 -0500
 categories: daily update
 author: "Charles Kubiak"
