@@ -17,12 +17,13 @@ Today I'll be tackling the following items:
         - [Example bash profile](https://gist.github.com/paulocheque/3667381)
     - Good to know: Your bash_profile is used for login shells, and bashrc is for non-login shells.  With MacOS everytime you open a new terminal it runs a login, so you will typically only ever use your bash_profile.  You can sync the two files together to make sure that they are always the same in the instance that you do end up running a non-login shell, try typing "/bin/bash/" from the command line.  This will launch a non-login shell and will read from your bashrc, which in most cases is probably empty.
 
-    - You can copy your bash_profile into bashrc and add the following lines into your bash_profile:
+    - You can copy your bash_profile into bashrc and add the following lines into your bash_profile.  Going forward you will make changes to bashrc only and both will stay up to date.
 {% highlight ruby %}
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
 {% endhighlight %}
+
  - Java notes:
     - Primitive data types are the simplest types of data, they have no built in behavior
     - The Java programming language has static typing. Java programs will not compile if a variable is assigned a value of an incorrect type. This is a bug, specifically a type declaration bug.
