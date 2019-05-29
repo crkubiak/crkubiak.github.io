@@ -9,6 +9,28 @@ author: "Charles Kubiak"
 ---
 
 - I put some time into reading the rest of the 4 rules of simple design.  I will hope to summarize the main points in tomorrows blog post.
+    - Procedural Polymorphism
+        - Am I testing behavior or state? (behavior is best)
+        - Variable named state is a red flag
+        - Can we extend the system vs modify it? (extension preferred)
+- Completed a run of the coinchanger kata.
+    - I will test the following numbers: 0, 1, 2, 5, 6, 7, 10, 15, 16, 25, 35, 40, 41, 66, 94
+        - 0 tests zero
+        - 1 tests one
+        - 2 tests multiple
+        - 5 tests new return value N
+        - 6 tests N and P together in the loop
+        - 7 tests N and multiple P's
+        - 10 tests new return value D
+        - 15 tests D and N in loop
+        - 16 tests D, N, and P in loop
+        - 20 tests multiple D's
+        - 25 tests new return value Q
+        - 35 tests Q and D
+        - 40 tests Q, D, and N
+        - 41 tests Q, D, N, and P
+        - 66 tests multiple Q's
+        - 94 is longest possible output
 - I paired with Lucas this morning doing the coin changer kata in java.
     - I learned how to initiate a new project in intellij using gradle
     - We did TDD on the kata and nearly completed it in the hour we had booked, I feel like I should be able to record a version of this in the next day or so and move on to tic-tac-toe.
