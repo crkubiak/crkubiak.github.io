@@ -14,7 +14,7 @@ author: "Charles Kubiak"
         - Variable named state is a red flag
         - Can we extend the system vs modify it? (extension preferred)
 - Completed a run of the coinchanger kata.
-    - I will test the following numbers: 0, 1, 2, 5, 6, 7, 10, 15, 16, 25, 35, 40, 41, 66, 94
+    - I will test the following numbers: 0, 1, 2, 5, 6, 7, 10, 15, 16, 20, 25, 35, 40, 41, 66, 94
         - 0 tests zero
         - 1 tests one
         - 2 tests multiple

@@ -7,6 +7,10 @@ author: "Charles Kubiak"
 # tags: "bash profile"
 # permalink: ""
 ---
+- Today I did my CoinChanger Kata recording, I did another 8 runs (14 total) today and captured a decent video kata and posted it on my YouTube channel. [CoinChanger Kata](https://www.youtube.com/watch?v=X9rHW-CbGMI)
+- I'm comfortable with setting up a java project in intellij w/gradle.
+- I finished the Understanding the 4 simple rules of design
+- I've started to work on my 15 minute presentation.
 
 <!-- {% highlight java %}
 {% endhighlight %} -->
