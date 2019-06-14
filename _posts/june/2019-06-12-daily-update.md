@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Daily Update 6/11/19"
-date:   2019-06-11 08:30:00 -0500
+title:  "Daily Update 6/12/19"
+date:   2019-06-12 08:30:00 -0500
 categories: daily update
 author: "Charles Kubiak"
 # tags: "bash profile"
