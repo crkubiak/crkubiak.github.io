@@ -29,7 +29,6 @@ h2 {
 #brick {
   position: absolute;
   z-index: 1;
-  /* width: 100%; */
   height: 35vw;
 }
 
@@ -39,10 +38,4 @@ h2 {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-}
-
-header {
-  position: absolute;
-  top: 19vh;
-  height: auto;
 }
