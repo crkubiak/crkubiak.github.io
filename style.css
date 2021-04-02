@@ -4,14 +4,33 @@ h1,
 h2 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
+  z-index: 2;
 }
 
 h1 {
-  font-size: 7em;
+  font-size: 6.5vw;
+  color: #141204;
+  text-shadow: 2px 2px 2px #141204;
 }
 
 h2 {
-  font-size: 3.5em;
+  z-index: 2;
+  font-size: 3.25vw;
+  color: #af1b3f;
+  text-shadow: 2px 2px 2px #af1b3f;
+}
+
+#cat {
+  max-width: 30%;
+  height: auto;
+  z-index: 2;
+}
+
+#brick {
+  position: absolute;
+  z-index: 1;
+  /* width: 100%; */
+  height: 35vw;
 }
 
 #container {
@@ -20,4 +39,10 @@ h2 {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 19vh;
+  height: auto;
 }
