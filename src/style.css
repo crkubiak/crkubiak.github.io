@@ -9,7 +9,7 @@
 }
 
 .btn-blue {
-  @apply bg-blue-500 text-white;
+  @apply bg-rich-black text-cadet-blue;
 }
 
 .btn-blue:hover {
