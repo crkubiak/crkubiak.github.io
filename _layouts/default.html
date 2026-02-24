@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {% feed_meta %}
+</head>
+<body class="bg-theme-bg text-theme-text font-sans antialiased min-h-screen">
+
+  <nav class="border-b border-theme-border py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <a href="{{ "/" | relative_url }}" class="text-2xl font-bold tracking-tighter uppercase">
+        {{ site.title | escape }}
+      </a>
+      <div class="space-x-8 hidden md:flex font-medium uppercase tracking-widest text-sm">
+        <a href="{{ "/" | relative_url }}" class="hover:text-theme-primary transition">Log</a>
+        <a href="{{ "/about" | relative_url }}" class="hover:text-theme-primary transition">About</a>
+        <a href="#" class="hover:text-theme-primary transition">Projects</a>
+      </div>
+      <div class="md:hidden">
+        <!-- Mobile menu icon placeholder -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="mt-20 border-t border-theme-border py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm tracking-widest uppercase opacity-60">
+      &copy; {{ "now" | date: "%Y" }} {{ site.title | escape }} // Engineering the Future
+    </div>
+  </footer>
+
+</body>
+</html>
