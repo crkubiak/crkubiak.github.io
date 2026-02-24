@@ -1,4 +1,4 @@
-rname: Deploy Jekyll with Tailwind
+name: Deploy Jekyll with Tailwind
 
 on:
   push:
