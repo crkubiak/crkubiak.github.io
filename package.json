@@ -1,0 +1,13 @@
+{
+  "name": "crkubiak-blog",
+  "version": "1.0.0",
+  "description": "Technical blog with Jekyll and Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "watch:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
