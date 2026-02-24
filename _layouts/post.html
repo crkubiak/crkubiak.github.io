@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="max-w-4xl mx-auto px-4 py-20">
+  <header class="mb-16 pb-12 border-b border-theme-border">
+    <div class="flex items-center space-x-3 mb-6">
+      <span class="text-xs font-bold uppercase tracking-[0.3em] text-theme-accent-1">
+        {{ page.categories | first | default: "Transmission" }}
+      </span>
+      <span class="w-1 h-1 bg-theme-border rounded-full"></span>
+      <span class="text-xs uppercase tracking-widest opacity-40">
+        {{ page.date | date: "%b %d, %Y" }}
+      </span>
+    </div>
+    
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-theme-navy">
+      {{ page.title }}
+    </h1>
+
+    <div class="flex flex-wrap gap-2">
+      {% for tag in page.tags %}
+      <span class="text-[10px] uppercase tracking-widest border border-theme-border px-2 py-1 opacity-60">
+        #{{ tag }}
+      </span>
+      {% endfor %}
+    </div>
+  </header>
+
+  <div class="prose prose-lg prose-theme-navy max-w-none font-light leading-relaxed mb-20">
+    {{ content }}
+  </div>
+
+  <footer class="pt-12 border-t border-theme-border">
+    <div class="bg-theme-white border border-theme-border p-8 flex items-center justify-between">
+      <div class="text-sm">
+        <span class="block font-bold uppercase tracking-widest mb-1">Author Log</span>
+        <span class="opacity-60">{{ site.title }}</span>
+      </div>
+      <a href="{{ "/" | relative_url }}" class="text-xs font-bold uppercase tracking-widest text-theme-primary hover:underline">
+        Back to Archive
+      </a>
+    </div>
+  </footer>
+</article>
