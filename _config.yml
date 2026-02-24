@@ -27,7 +27,6 @@ url: "https://www.charleskubiak.com"
 
 # Build settings
 # We are using custom layouts in _layouts/
-theme: none
 plugins:
   - jekyll-feed
 
