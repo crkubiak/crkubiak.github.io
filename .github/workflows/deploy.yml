@@ -1,4 +1,4 @@
-name: Deploy Jekyll with Tailwind
+rname: Deploy Jekyll with Tailwind
 
 on:
   push:
@@ -36,8 +36,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3'
+          ruby-version: '4.0.1'
           bundle-cache: true
+
+      - name: Install Ruby Dependencies
+        run: bundle install
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
