@@ -1,76 +1,64 @@
-# Atomic Blueprint // Technical Blog
+# Parsa Jekyll
 
-An expert-grade technical blog for Software Delivery Leads, designed with a **Midcentury Modern "Raygun Gothic"** meets **Structural Engineering Schematic** aesthetic.
+Parsa jekyll Creative blog Template ported from [Parsa HTML Template](https://themefisher.com/products/parsa)
 
-## Visual Identity: "The Atomic Blueprint"
+## Setup
 
-The blog uses a "Drafting Paper" background with "Blueprint Navy" text, punctuated by high-contrast retro accents (Red, Orange, and Gold). The UI features sharp borders, technical corner markers, and uppercase tracking-widest typography to evoke authority and precision.
+To start your project, fork this repository
+After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
 
-### Color Palette
+Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
 
-| Name | Hex | Usage |
-| :--- | :--- | :--- |
-| **Drafting Paper** | `#F4F1DE` | Main Background |
-| **Blueprint Navy** | `#003049` | Primary Text & Hero Background |
-| **Retro Red** | `#D62828` | Primary Actions / Buttons |
-| **Retro Orange** | `#F77F00` | Tags & Secondary Accents |
-| **Gold/Yellow** | `#FCBF49` | Icons & Detail Accents |
-| **Border Gray** | `#E0DDCB` | Structural Dividers |
+## Customize
 
----
+Things you can customize in `_data/settings.yml` (no HTML/CSS):
 
-## Technical Architecture
+- Theme General Settings ( name, logo, email, phone, address )
+- Hero Section
+- About Section
+- Team Section
+- Skills Section
+- Exprerience Section
+- Education Section
+- Services Section
+- Portfolio Section
+- Testimonials Section
+- Client Slider Section
+- Contact Section
 
-### 1. Tailwind Integration
+## Deployment
 
-The theme is powered by Tailwind CSS. Custom colors are mapped in `tailwind.config.js` using the `theme-` prefix:
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-- `bg-theme-bg`
-- `text-theme-text`
-- `bg-theme-primary` (Retro Red)
-- `border-theme-border`
+<!-- edit with sitepins -->
 
-### 2. Core Components (`_includes/`)
+## 📝 Edit Content with CMS
 
-- **`hero.html`**: The command center. Includes technical SVGs and a "System Status" indicator.
-- **`article-card.html`**: Structural cards for blog posts with corner accents and category tagging.
-- **`newsletter.html`**: "The Lead's Log" signup module with a distinct vertical gold border.
+This template comes pre-configured with [**Sitepins**](https://sitepins.com/?aff=tfgithub), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
 
-### 3. Layouts (`_layouts/`)
+**How to get started:**
 
-- **`default.html`**: The base wrapper providing the drafting paper texture and global navigation.
-- **`home.html`**: A dual-column layout featuring the Hero section, a primary Article Feed, and a Sidebar for the Newsletter and Metadata.
+Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
 
----
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Parsa%20Jekyll&repository=https://github.com/themefisher/parsa-jekyll/?aff=tfgithub">
+    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
+  </a>
+  
+## Reporting Issues
 
-## Setup & Development
+We use GitHub Issues as the official bug tracker for the **Parsa Theme**. Please Search [existing issues](https://github.com/themefisher/parsa-jekyll/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/parsa-jekyll/issues/new)
 
-### Prerequisites
+## Technical Support or Questions
 
-- Ruby & Jekyll
-- Node.js (for Tailwind CSS processing)
+If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
 
-### Tailwind Build
+<!-- licence -->
+## License
 
-To compile the CSS, ensure you have Tailwind installed and run:
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
 
-```bash
-npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch
-```
+**Code License:** Released under the [MIT](https://github.com/themefisher/parsa-jekyll/blob/main/LICENSE) license.
 
-### Adding New Posts
-
-Add Markdown files to the `_posts` directory. Use the following Front Matter for best results:
-
-```yaml
----
-layout: post
-title: "Scaling AI Delivery"
-date: 2026-02-24
-categories: [AI, Engineering]
-tags: [architecture, scale]
----
-```
-
----
-**Transmission End // Happy Engineering.**
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.

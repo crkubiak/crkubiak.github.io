@@ -1,51 +1,119 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+---
+#-------------------------------
+# General Site Settings
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://www.charleskubiak.com" # The base hostname & protocol for your site
 
-title: Atomic Blueprint
-email: your-email@example.com
-description: >-
-  Delivering the Future, Iteration by Iteration. A technical blog on AI, engineering leadership, and delivery.
-baseurl: ""
-url: "https://www.charleskubiak.com"
+title: Charles Kubiak
+logo: /assets/images/logo.png # You can add own logo
+description: Personal blog and portfolio of Charles Kubiak.
+copyright: Copyright © 2026 Charles Kubiak
+# Preloader
+preloader: true # To disable preloader change value to false
 
+menu:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: Contact
+    url: /contact/
+
+# *** NOTE ***
+# You can add submenus. For example:
+
+#  menu:
+#  - name: Home
+#    url: /
+#    submenu:
+#     - name: Peru
+#       url: /peru/
+# ----------------------------------
+
+layout_home_page: true # Homepage layout ( two layout is available, you can set the another layout by change the value of layout_home_page "true" to "false")
+
+featured-post-slider: true # You can enable or disable the featured-post-slider using true or false values.
+
+#-------------------------------
+# Hero Section
+hero:
+  hero-subtitle: Software Consultant & Developer
+  hero-banner: /assets/images/banner-img.png # Add your banner image '/assets/images/'
+
+#-------------------------------
+# Author Settings
+author:
+  name: Charles Kubiak
+
+#-------------------------------
+# Contact Info
+contact:
+  email: charles@charleskubiak.com
+  phone: ""
+  address:
+    city: ""
+    street: ""
+
+# Contact Form
+contact-form: charles@charleskubiak.com
+
+# Social links
+social:
+  - { icon: "ti-github", link: "https://github.com/crkubiak" }
+  - { icon: "ti-linkedin", link: "#" }
+  - { icon: "ti-twitter-alt", link: "#" }
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+
+#-------------------------------
+# Instagram Feed
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+userID: ""
+accessToken: ""
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+#-------------------------------
 # Build settings
-# We are using custom layouts in _layouts/
+markdown: kramdown
+permalink: pretty
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-archives
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty
+
+# categories
+jekyll-archives:
+  enabled: all
+  layout: category
+  permalinks:
+    category: "/category/:name/"
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

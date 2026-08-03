@@ -1,4 +1,4 @@
-name: Deploy Jekyll with Tailwind
+name: Deploy Jekyll Site
 
 on:
   push:
@@ -21,26 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install Node Dependencies
-        run: npm install
-
-      - name: Build Tailwind CSS
-        run: npm run build:css
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0.1'
-          bundle-cache: true
-
-      - name: Install Ruby Dependencies
-        run: bundle install
+          ruby-version: '3.3'
+          bundler-cache: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
